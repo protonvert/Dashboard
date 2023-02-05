@@ -13,77 +13,245 @@
 <body>
     
 <section class="layout">
-    <section class="nav">
+    <nav class="nav">
         <div class="nav--logo">
             <img id="logo-image" src="icons/coffee.svg" alt="coffe logo">
             <div class="logo-text">Coffee Chat</div>
         </div>
         <div class="nav--options">
             <Ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li><a class="nav--link" href="#">Home</a></li>
+                <li><a class="nav--link" href="#">Profile</a></li>
+                <li><a class="nav--link" href="#">Messages</a></li>
+                <li><a class="nav--link" href="#">History</a></li>
+                <li><a class="nav--link" href="#">Tasks</a></li>
+                <li><a class="nav--link" href="#">Communities</a></li>
             </Ul>
 
             <Ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><a class="nav--link" href="#">Settings</a></li>
+                <li><a class="nav--link" href="#">Support</a></li>
+                <li><a class="nav--link" href="#">Privacy</a></li>
             </Ul>
 
         </div>
-    </section>
+    </nav>
 
     <section class="content">
-        <div class="content--header">
-           Search bar here and account over to the right
+
+        <div class="content--upper">
+            
+            <div class="content--upper--top">
+                    <div class="content--upper--top-left">
+                    <!-- search icon -->
+                    <img src="icons/search.svg" alt="search">
+                    <!-- search bar -->
+                    <label for="search-bar"></label>
+                    <input type="text" id="search-bar">
+                </div>
+                <div class="content--upper--top-right">
+                    <!-- bell icon -->
+                    <img src="icons/mail.svg" alt="mail">
+                    <!-- logo -->
+                    <img src="images/dog pfp.jpg" alt="profile picture" id="profile-picture">
+                    <!-- username -->
+                    <span class="username-top">Zezima</span>
+                </div>
+
+            </div>
+
+            <div class="content--upper--bottom">
+
+                <!-- Bigger Logo -->
+                <div class="content--upper--bottom-left">
+                    <div id="welcome-message">Hi there,</div>
+                    <div id="username-bottom">Zezima</div>
+                    <img src="images/dog pfp.jpg" alt="profile picture">
+                </div>
+                <div class="content--upper--bottom-right">
+                    <button class="content--upper--bottom-right-button button-new">New</button>
+                    <button class="content--upper--bottom-right-button button-upload">Upload</button>
+                    <button class="content--upper--bottom-right-button button-submit">Submit</button>
+                </div>
+                <!-- Hi there, -->
+                <!-- Morgan Oakley (@morgan) -->
+
+                <!-- button-new -->
+                <!-- button-upload -->
+                <!-- button share -->
+
+            </div>
+
         </div>
-        <div class="content--projects">
-            <div class="content--card card1">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
+
+        <div class="content--lower">
+
+            <div class="content--left">
+                
+                <h1 id="Projects">Your Projects</h1>
+
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>JS Calculator</h2>
+                    <p>
+                        Basic Javascript calculator. Capable of basic arithmetic with essential features such as history rememberence. One of my first projects.
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>Grid Structuring</h2>
+                    <p>
+                        Utilize flexbox and grid to create complex layouts for web pages. This was done during my intermediate stage of learning CSS and HTML.
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>DOM Manipulation</h2>
+                    <p>
+                        Manipulation of the DOM- executed in the fashion of an etch-a-sketch. This was one of my first impressive javascript exercises. It's also fun to go back and draw on to this day!
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>Another Project</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, illo rem possimus modi ex veritatis accusamus libero repudiandae hic.
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>Another Project</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, illo rem possimus modi ex veritatis accusamus libero repudiandae hic.
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                <div class="content--card">
+                    <div class="content--card-text">
+                    <h2>Another Project</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, illo rem possimus modi ex veritatis accusamus libero repudiandae hic.
+                    </p>
+                </div>
+                <div class="content--card-icons">
+                    <div class="content--card-icons">
+                        <img src="icons/thumbs up.svg" alt="thumbs up" class="icon">
+                        <img src="icons/heart.svg" alt="favorite" class="icon">
+                        <img src="icons/retweet.svg" alt="repost" class="icon">
+                    </div>
+                    </div>
+                </div>
+                
+                
+            
+            
+
             </div>
-            <div class="content--card card2">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
-            </div>
-            <div class="content--card card3">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
-            </div>
-            <div class="content--card card4">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
-            </div>
-            <div class="content--card card5">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
-            </div>
-            <div class="content--card card6">
-                <h2>Project Name</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum qui reprehenderit laudantium deserunt excepturi fugit quis odio voluptatibus sint.
-                </p>
+
+            <div class="content--right">
+
+                <h1 id="Announcements">Announcements</h1>
+
+                    <div class="content--announcements">
+
+                        <div class="content--card-announcement">
+                            <img src="icons/announce.svg" alt="bullhorn">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                            </p>
+                        </div>
+
+                        <div class="content--card-announcement">
+                            <img src="icons/announce.svg" alt="bullhorn">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                            </p>
+                        </div>
+
+                        <div class="content--card-announcement">
+                            <img src="icons/announce.svg" alt="bullhorn">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                    <h1 id="Trending">Trending</h1>
+
+                <div class="content--trending">
+
+                    <div class="content--card-trend">
+                        <img src="icons/hash.svg" alt="hashtag">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                        </p>
+                    </div>
+                    <div class="content--card-trend">
+                        <img src="icons/hash.svg" alt="hashtag">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                        </p>
+                    </div>
+                    <div class="content--card-trend">
+                        <img src="icons/hash.svg" alt="hashtag">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates pariatur quae iusto eos possimus, dolorum corporis impedit cupiditate.
+                        </p>
+                    </div>
+
+                </div>
+        
             </div>
         </div>
-        <div class="content--anouncements"></div>
-        <div class="content--trending"></div>
+        
+
     </section>
-    
-</section>
 
 </body>
 </html>
